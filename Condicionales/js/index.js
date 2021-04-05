@@ -1,4 +1,4 @@
-const btnEvNum = document.getElementById("btnEvNum").value;
+const btnEvNum = document.getElementById("btnEvNum");
 
 btnEvNum.addEventListener('click', evaluarNumeros)
 
