@@ -4,7 +4,7 @@ btnCalcularEdad.addEventListener("click", calcularEdad);
 const alertResult = document.getElementById("resultado");
 
 function calcularEdad(){
-    const edad1 = document.getElementById("inpPrimered").value;
+    const edad1 = Number(document.getElementById("inpPrimered").value);
     const edad2 = Number(document.getElementById("inpSegundaed").value);
 
     if(edad1 > edad2){

@@ -4,7 +4,7 @@ btnCalcularIncen.addEventListener("click", calcularIncentivos);
 const alertResult = document.getElementById("resultado");
 
 function calcularIncentivos(){
-    var Unidades = document.getElementById("inpUnidades").value;
+    var Unidades = Number(document.getElementById("inpUnidades").value);
 
     if(Unidades >= 100){
         alertResult.innerText = "El operario recibira incentivos.";
