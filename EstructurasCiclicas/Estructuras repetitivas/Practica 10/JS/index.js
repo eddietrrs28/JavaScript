@@ -55,10 +55,10 @@ function calcularNum(){
     votoPorc3 = (contadorVotos3 * 100) / suma;
     votoPorc4 = (contadorVotos4 * 100) / suma;
 
-    resultAcum += `<li class="list-group-item">El total de votos del candidato 1 fueron: ${contadorVotos1}.<br> El porcentaje obtenido fue: ${votoPorc1}%</li>`;
-    resultAcum += `<li class="list-group-item">El total de votos del candidato 2 fueron: ${contadorVotos2}.<br> El porcentaje obtenido fue: ${votoPorc2}%</li>`;
-    resultAcum += `<li class="list-group-item">El total de votos del candidato 3 fueron: ${contadorVotos3}.<br> El porcentaje obtenido fue: ${votoPorc3}%</li>`;
-    resultAcum += `<li class="list-group-item">El total de votos del candidato 4 fueron: ${contadorVotos4}.<br> El porcentaje obtenido fue: ${votoPorc4}%</li>`;
+    resultAcum += `<li class="list-group-item">El total de votos del candidato 1 fueron: ${contadorVotos1}.<br> El porcentaje obtenido fue: ${votoPorc1.toFixed(2)}%</li>`;
+    resultAcum += `<li class="list-group-item">El total de votos del candidato 2 fueron: ${contadorVotos2}.<br> El porcentaje obtenido fue: ${votoPorc2.toFixed(2)}%</li>`;
+    resultAcum += `<li class="list-group-item">El total de votos del candidato 3 fueron: ${contadorVotos3}.<br> El porcentaje obtenido fue: ${votoPorc3.toFixed(2)}%</li>`;
+    resultAcum += `<li class="list-group-item">El total de votos del candidato 4 fueron: ${contadorVotos4}.<br> El porcentaje obtenido fue: ${votoPorc4.toFixed(2)}%</li>`;
     
     const lista = document.getElementById("acumVot");
     lista.innerHTML = resultAcum;

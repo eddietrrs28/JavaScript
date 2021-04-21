@@ -7,7 +7,6 @@ function calcularNum(){
     let num1 = 0;
     let num2 = 1;
     let suma = 0;
-    let contador = 2;
 
     let num = prompt('Ingrese un numero:');
     if(isNaN(num) == true){
@@ -31,21 +30,12 @@ function calcularNum(){
             resultAcum += `<li class="list-group-item">${suma}</li>`;
             num1 = num2;
             num2 = suma;
-            contador ++;
             }
         }
     }        
     
     const lista = document.getElementById("acumNum");
     lista.innerHTML = resultAcum;
-
-    const containerResultado = document.getElementById("resultado");
-    if(num != num2){
-        containerResultado.innerText = 'El numero '+num+' no esta dentro de la serie FIBONACCI.';
-    }
-    else{
-        containerResultado.innerText = 'La posición del numero '+num+' en la serie FIBONACCI es: '+contador+'.';
-    }
 
 }
 
